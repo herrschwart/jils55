@@ -62,9 +62,9 @@ export function fetchBlogPosts(id, cb) {
     return
   }
 
-  axios.get('https://api.rss2json.com/v1/api.json', {
+  axios.get('https://superdevresources.com/api/rss2json', {
       params: {
-        rss_url: BlogMap[id]
+        url: BlogMap[id]
       }
     })
     .then(function (response) {
