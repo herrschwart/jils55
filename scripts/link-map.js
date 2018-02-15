@@ -6,8 +6,8 @@ const developmentLinks = {
     // {to: 'medium', iconClass: 'icon icon-medium', iconID: '#icon-medium', title: 'Medium'}
     {to: 'humor', iconClass: 'icon icon-smile-o', iconID: '#icon-smile-o', title: 'Humor'},
   ],
-  blogs: [    
-    {to: 'smashing-magazine', title: 'Smashing Magazine'},
+  blogs: [
+    {to: 'forklog', title: 'Forklog'},
     {to: 'webdesignerdepot', title: 'Webdesigner Depot'},
     {to: 'sitepoint', title: 'SitePoint'},
     {to: 'tutorialzine', title: 'Tutorialzine'},
