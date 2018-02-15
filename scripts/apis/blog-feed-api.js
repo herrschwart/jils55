@@ -38,7 +38,7 @@ const BlogMap = {
   'codrops': 'http://feeds2.feedburner.com/tympanus',
   'speckyboy': 'https://speckyboy.com/feed/',
   'css-tricks': 'https://css-tricks.com/feed/',
-  'designshack': 'https://designshack.net/feed',  
+  'designshack': 'https://designshack.net/feed',
   'cssauthor': 'https://cssauthor.com/feed',
   'webdesignledger': 'https://webdesignledger.com//feed'
 }
@@ -46,7 +46,7 @@ const BlogMap = {
 const IsAtom = {
   'moz': true,
   'google-webmaster': true,
-} 
+}
 
 var blogCache = {}
 
@@ -62,7 +62,7 @@ export function fetchBlogPosts(id, cb) {
     return
   }
 
-  axios.get('https://api.superdevresources.com/rss2json', {
+  axios.get('https://superdevresources.com/api/rss2json?', {
       params: {
         url: BlogMap[id]
       }
