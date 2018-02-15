@@ -7,7 +7,7 @@ const developmentLinks = {
     {to: 'humor', iconClass: 'icon icon-smile-o', iconID: '#icon-smile-o', title: 'Humor'},
   ],
   blogs: [
-    {to: 'forklog', title: 'Forklog'},
+    {to: 'jourtify', title: 'Jourtify'},
     {to: 'webdesignerdepot', title: 'Webdesigner Depot'},
     {to: 'sitepoint', title: 'SitePoint'},
     {to: 'tutorialzine', title: 'Tutorialzine'},
