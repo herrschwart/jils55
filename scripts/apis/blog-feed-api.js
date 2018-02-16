@@ -65,7 +65,7 @@ export function fetchBlogPosts(id, cb) {
   axios.get('https://query.yahooapis.com/v1/public/yql', {
       params: {
         q: query,
-        format: 'json'
+        format: json
       }
     })
     .then(function (response) {
