@@ -65,27 +65,17 @@ export function fetchBlogPosts(id, cb) {
   axios.get('https://query.yahooapis.com/v1/public/yql', {
       params: {
         q: query,
-        format: json
+        format: 'json'
       }
     })
     .then(function (response) {
       var posts = []
 
-      // console.log(JSON.stringify(response, null, 4))
-      var items = response.data.items
-
-      items.forEach( function(post) {
+      response.data.query.results.item.forEach( function(post) {
         if(shouldAdd(post)) {
+          // console.log(JSON.stringify(post, null, 4))
           post.url = post.link
-          post.pubDate = post.created
           post.time = Math.floor((new Date(post.pubDate)).getTime() / 1000)
-          if(post.creator) {
-            // string html tags
-            var div = document.createElement("div")
-            div.innerHTML = post.creator
-            post.creator =  div.textContent || div.innerText || ""
-            post.creator = post.creator.split(',')[0] // remove anything extra after the name
-          }
           posts.push(post)
         }
       })
@@ -98,7 +88,7 @@ export function fetchBlogPosts(id, cb) {
 }
 
 function shouldAdd(post) {
-  return isAsciiOnly(post.title) && post.title.indexOf("http://") < 0 && post.title.indexOf("https://") < 0 && post.title.indexOf("sponsor") < 0
+  return isAsciiOnly(post.title) && post.title.indexOf("http://") < 0 && post.title.indexOf("https://") < 0
 }
 
 function isAsciiOnly(str) {
