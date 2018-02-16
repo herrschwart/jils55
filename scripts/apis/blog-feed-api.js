@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const BlogMap = {
   'graphic-flip': 'https://graphicflip.com/feed/',
-  'jourtify': 'https://www.forklog.com/feed',
+  'jourtify': 'http://feeds.feedburner.com/Jourtify',
   'sdr': 'https://superdevresources.com/feed/',
   'template-flip' : 'https://jourtify.com/feed',
   'awwwards': 'http://www.awwwards.com/blog/feed/',
