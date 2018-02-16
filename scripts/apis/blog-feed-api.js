@@ -57,14 +57,15 @@ export function fetchBlogPosts(id, cb) {
     return
   }
 
-  if(!BlogMap[id]) {
-    console.log("No blog configured with id: " + id)
-    return
-  }
+  var query = 'select * from rss where url="'
 
-  axios.get('http://superdevresources.com/api/rss2json', {
+  query += BlogMap[id]
+  query += '"'
+
+  axios.get('https://query.yahooapis.com/v1/public/yql', {
       params: {
-        url: BlogMap[id]
+        q: query,
+        format: 'json'
       }
     })
     .then(function (response) {
