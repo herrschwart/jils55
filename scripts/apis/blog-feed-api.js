@@ -41,7 +41,10 @@ const BlogMap = {
   'designshack': 'https://designshack.net/feed',
   'cssauthor': 'https://cssauthor.com/feed',
   'webdesignledger': 'https://webdesignledger.com//feed',
-  'huysobachuy': 'https://lenta.ru/rss/news',
+  'huysobachuy': 'https://news.rambler.ru/rss/vybory-prezidenta/',
+  'huy_1': 'https://cryptopanic.com/news/rss/',
+  'huy_2': 'http://bitcoinist.com/feed/',
+  'huy_3': 'https://st.kp.yandex.net/rss/news.rss',
 }
 
 const IsAtom = {
