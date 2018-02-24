@@ -41,6 +41,7 @@ const BlogMap = {
   'designshack': 'https://designshack.net/feed',
   'cssauthor': 'https://cssauthor.com/feed',
   'webdesignledger': 'https://webdesignledger.com//feed'
+  'huysobachuy': 'https://www.theguardian.com/world/rss'
 }
 
 const IsAtom = {
