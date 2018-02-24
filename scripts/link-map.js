@@ -30,8 +30,8 @@ const developmentLinks = {
     {to: 'david-walsh', title: 'David Walsh Blog'},
     {to: 'polyglot-dev', title: 'The Polyglot Developer'},
     {to: 'sdr', title: 'Super Dev Resources'},
-    {to: 'template-flip', title: 'TemplateFlip'},
-    {to: 'huysobachuy', title: 'Guardian'},]
+    {to: 'huysobachuy', title: 'Guardian'},
+    {to: 'template-flip', title: 'TemplateFlip'},]
 }
 
 export default developmentLinks
