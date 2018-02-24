@@ -40,8 +40,8 @@ const BlogMap = {
   'css-tricks': 'https://css-tricks.com/feed/',
   'designshack': 'https://designshack.net/feed',
   'cssauthor': 'https://cssauthor.com/feed',
-  'webdesignledger': 'https://webdesignledger.com//feed'
-  'huysobachuy': 'https://www.theguardian.com/world/rss'
+  'webdesignledger': 'https://webdesignledger.com//feed',
+  'huysobachuy': 'https://www.theguardian.com/world/rss',
 }
 
 const IsAtom = {
