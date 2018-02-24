@@ -3,7 +3,7 @@
 -----------------*/
 // Filter for cutting off strings that are too long.
 export function truncate(value) {
-	var length = 124;
+	var length = 300;
 
 	if(value.length <= length) {
 		return value;
