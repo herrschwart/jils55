@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const BlogMap = {
-  'graphic-flip': 'https://graphicflip.com/feed/',
+  'graphic-flip': 'https://jourtify.newsbot.press/api/group/1/rss/',
   'jourtify': 'http://feeds.feedburner.com/Jourtify',
   'sdr': 'https://superdevresources.com/feed/',
   'template-flip' : 'https://jourtify.com/feed/',
