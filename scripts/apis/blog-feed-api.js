@@ -2,9 +2,9 @@ import axios from 'axios'
 
 const BlogMap = {
   'graphic-flip': 'https://jourtify.newsbot.press/api/group/1/rss/',
-  'jourtify': 'http://feeds.feedburner.com/Jourtify',
+  'jourtify': 'https://jourtify.newsbot.press/api/group/1/rss/',
   'sdr': 'https://superdevresources.com/feed/',
-  'template-flip' : 'https://jourtify.com/feed/',
+  'template-flip' : 'https://jourtify.newsbot.press/api/group/1/rss/',
   'awwwards': 'http://www.awwwards.com/blog/feed/',
   'webdesignerdepot': 'http://feeds2.feedburner.com/webdesignerdepot',
   'graphicdesignjunction': 'http://feeds.feedburner.com/GraphicDesignJunction',
